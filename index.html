@@ -610,12 +610,10 @@ GROWTH OPPORTUNITY:
 [One specific, underutilized opportunity based on their numbers. If conversion is low, focus there. If margins are thin, suggest pricing changes. Make it feel like you spotted something they missed.]`;
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'anthropic-version': '2023-06-01',
-          'anthropic-dangerous-direct-browser-access': 'true'
         },
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',
