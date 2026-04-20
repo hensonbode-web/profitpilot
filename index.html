@@ -537,11 +537,7 @@
 </div>
 
 <script>
-  // =============================================
-  // PASTE YOUR ANTHROPIC API KEY BELOW
-  // =============================================
-  const API_KEY = "your-api-key-here";
-  // =============================================
+ 
 
   async function runAnalysis() {
     const revenue   = document.getElementById('revenue').value.trim();
@@ -554,11 +550,6 @@
 
     if (!revenue || !expenses) {
       showError('Please enter at least your monthly revenue and expenses to continue.');
-      return;
-    }
-
-    if (API_KEY === "your-api-key-here") {
-      showError('You need to add your Anthropic API key in the code first. Open index.html and replace "your-api-key-here" with your real key.');
       return;
     }
 
